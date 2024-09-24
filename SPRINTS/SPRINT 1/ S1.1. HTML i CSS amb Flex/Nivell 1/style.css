@@ -153,9 +153,9 @@ footer {
         padding: 0 6rem;
     }
 
-    /* body {
+    body {
         background-color: #2e4e50;
-    } */
+    }
 
     header div:first-of-type {
         display: grid;
