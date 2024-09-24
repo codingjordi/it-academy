@@ -1,0 +1,186 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+
+html {
+    font-size: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(218, 100, 84);
+    padding-bottom: 106.4px;
+}
+
+main {
+    border: 20px solid black;
+    margin-bottom: 2rem;
+}
+
+
+/*HEADER */
+
+header {
+    border: 20px solid black;
+    margin-bottom: 2rem;
+}
+
+
+.header-container {
+    background-color: rgb(41, 43, 114);
+    padding: 1.5rem;
+
+}
+
+.header-container * {
+    background-color: rgb(247, 63, 72);
+    padding: 1.5rem;
+
+}
+
+.header-container div:first-child:hover {
+    animation: grow 0.3s forwards;
+}
+
+.banner {
+    background-color: rgb(248, 151, 25);
+    font-size: 2rem;
+    font-weight: 700;
+    border-top: 20px solid black;
+    padding: 1.5rem;
+}
+
+.banner .banner-content {
+    background-color: rgb(237, 217, 36);
+    padding: 1.5rem;
+}
+
+/* MAIN */
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    padding: 1.5rem;
+    background-color: rgb(104, 94, 94);
+  }
+  
+  .articles > div:not(:last-child) {
+    background-color: lightblue;
+    padding: 20px;
+  }
+
+  .articles > div:last-child {
+    background-color: rgb(86, 159, 184);
+    padding: 20px;
+  }
+  
+  header div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+  
+aside {
+    border-top: 20px solid black;
+}
+
+.publicidad-container {
+    background-color: rgb(230, 28, 28);
+    padding: 1.5rem;
+}
+
+.publicidad-container .publicidad {
+    background-color: yellow;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+/* footer {
+    background-color: #ebee3f;
+    border: 20px solid black;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+
+/* @media (min-width: 768px) { 
+
+    html {
+        padding: 0 3rem;
+    }
+
+    main > div {
+        display: block;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        background-color: rgb(104, 94, 94);
+      }
+
+    .navegacion {
+        grid-column: span 2;
+      } 
+      
+      body {
+        background-color: #33c575;
+    }
+
+     
+} */
+
+@media (min-width: 1200px) { 
+
+    html {
+        padding: 0 6rem;
+    }
+
+    /* body {
+        background-color: #2e4e50;
+    } */
+
+    header div:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 1.5rem;
+        
+    }
+
+    main > div {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    aside {
+        border-left: 20px solid black;
+        border-top: 0;
+      }
+}
+
+/* @keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.09);
+        background-color: #f00; 
+    }
+} */
