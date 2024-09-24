@@ -118,7 +118,7 @@ footer {
 }
 
 
-/* @media (min-width: 768px) { 
+@media (min-width: 768px) { 
 
     html {
         padding: 0 3rem;
@@ -145,7 +145,7 @@ footer {
     }
 
      
-} */
+}
 
 @media (min-width: 1200px) { 
 
